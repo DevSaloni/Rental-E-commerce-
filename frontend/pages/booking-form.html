@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking form</title>
+    <link rel="stylesheet" href="../css/style.css" />
+
+</head>
+<body>
+    
+<!-- Booking Form Modal -->
+ <div class="booking-container">
+<div class="booking-modal">
+    <h2>Book this Rental</h2>
+    <form id="bookingForm">
+        <label>Start Date:</label>
+        <input type="date" name="startDate" required>
+    
+        <label>End Date:</label>
+        <input type="date" name="endDate" required>
+    
+        <label>Your Name:</label>
+        <input type="text" name="name" required>
+    
+        <label>Contact Email:</label>
+        <input type="email" name="email" required>
+    
+        <label>Contact Number:</label>
+        <input type="number" name="phone" required>
+    
+        <label>Delivery Address:</label>
+        <input type="text" name="address" required placeholder="Enter your full address">
+    
+        <label>Special Request (Optional):</label>
+        <textarea name="specialRequest" rows="3"></textarea>
+    
+        <button type="submit">Send Request</button>
+    </form>
+    
+</div>
+</div>
+<script src="../js/booking.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,912 @@
+/* Navbar Styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8); /* Transparent Dark */
+  padding: 15px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+/* Logo Styling */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Nav Links Styling */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  margin-right: 35px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+  color: #ffcc00;
+  transform: scale(1.1);
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  nav {
+      flex-direction: column;
+      text-align: center;
+  }
+  .nav-links {
+      margin-top: 10px;
+      flex-direction: column;
+      gap: 10px;
+  }
+}
+
+/* About section  */
+.about {
+  background: #ffffffcc;
+  padding: 60px 20px;
+  border-radius: 12px;
+  max-width: 1100px;
+  margin: 50px auto;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  line-height: 1.7;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 2.8em;
+  margin-bottom: 25px;
+  color: #ff6600;
+}
+
+.about h3 {
+  margin-top: 30px;
+  color: #222;
+  font-size: 1.5em;
+}
+
+.about p, .about ul {
+  color: #444;
+  font-size: 1.05em;
+  margin-top: 10px;
+}
+
+.about ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about ul li::before {
+  content: "✔️";
+  margin-right: 10px;
+  color: #28a745;
+}
+
+.about .cta a {
+  color: #ff6600;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* mylisting section  */
+
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+#bookingList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.booking-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.booking-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.booking-card h3 {
+  margin-top: 0;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.booking-card p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 15px;
+}
+
+.booking-card hr {
+  margin-top: 15px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+
+/* Rent Button */
+.rent-btn {
+  background: #ffcc00;
+  color: black;
+  padding: 8px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.rent-btn:hover {
+  background: #ffaa00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .rentals-section {
+      padding: 80px 20px;
+  }
+}
+/* =========================
+   Add Rental Page Styling
+   ========================= */
+   .add-rental-main {
+    padding: 100px 50px;
+    background: url('../images/owner-banner.png') center/cover no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rental-form-section {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .rental-form-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffcc00;
+  }
+  
+  .rental-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .rental-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .rental-form input[type="text"],
+  .rental-form input[type="number"],
+  .rental-form textarea,
+  .rental-form select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+  }
+  
+  .rental-form textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: #ffcc00;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background: #ffaa00;
+  }
+  
+  /* =========================
+   Register Page Styling
+   ========================= */
+.auth-main {
+  padding: 100px 50px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-form-section {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.auth-form-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffcc00;
+}
+
+.auth-form .form-group {
+  margin-bottom: 15px;
+}
+
+.auth-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #ffcc00;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #ffaa00;
+}
+
+.auth-link {
+  text-align: center;
+  margin-top: 15px;
+  color: #fff;
+}
+
+.auth-link a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   Global Styles & Navbar
+   ========================= */
+   body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 30px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s ease;
+  }
+  
+  .nav-links li a:hover, .nav-links li a.active {
+    color: #ffcc00;
+    transform: scale(1.1);
+  }
+  
+  
+/* hero section */
+  .hero {
+    background-image: url('../images/furniture.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    min-height: 100vh;
+    text-align: center;
+    position: relative;
+    color: #fff;
+  }
+  
+  .search-filter input,
+.search-filter select,
+.search-filter button {
+    margin-top: 100px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Light border for visibility */
+    border-radius: 8px;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent background */
+    color: white;
+    outline: none;
+    backdrop-filter: blur(10px); /* Adds a nice glass effect */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.search-filter input:focus,
+.search-filter select:focus {
+    background-color: rgba(255, 255, 255, 0.3); /* Slightly less transparent on focus */
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+/* Transparent button */
+.search-filter button {
+    background-color: rgba(255, 102, 0, 0.8);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-filter button:hover {
+    background-color: rgba(255, 102, 0, 1);
+}
+
+.product-card {
+  background: rgba(255, 255, 255, 0.2); /* Transparent effect */
+  border-radius: 10px;
+  margin-top: 60px;
+
+  width: 220px;
+  padding: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  backdrop-filter: blur(10px); /* Glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.3); /* Less transparent on hover */
+}
+
+.product-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  color:black; /* White text for better readability */
+  text-align: center;
+}
+
+.product-card p {
+  font-size: 16px;
+  color: #ff6600;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Rent Now Button */
+.product-card .rent-btn {
+  display: block;
+  width: 180px;
+  padding: 10px;
+  background: rgba(255, 102, 0, 0.8);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.product-card .rent-btn:hover {
+  background: rgba(255, 102, 0, 1);
+}
+
+  
+/* product category section*/
+/* Recommended Products Section */
+.recommended-products {
+  margin:0px;
+  padding: 0px 20px;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.recommended-products h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Category Tabs */
+.category-tabs {
+  margin-bottom: 30px;
+}
+
+.category-tabs .tab {
+  background: #fff;
+  border: 2px solid #ffcc00;
+  color: #333;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.category-tabs .tab:hover {
+  background: #ffcc00;
+  transform: scale(1.05);
+}
+
+.category-tabs .tab.active {
+  background: #ffcc00;
+  color: #000;
+}
+
+/* booking form section */
+.booking-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.booking-modal {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+}
+
+.booking-modal h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #555;
+  font-weight: 600;
+}
+
+form input,
+form textarea {
+  width: 480px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+form textarea {
+  resize: none;
+}
+
+form button {
+  width: 500px;
+  padding: 12px;
+  background: orangered;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+form button:hover {
+  background: #3c41a3;
+}
+
+@media screen and (max-width: 600px) {
+  .booking-modal {
+    padding: 20px;
+  }
+}
+
+/*testimonal section */
+
+.rating {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #ff9800; /* Golden yellow for stars */
+}
+
+.rating span {
+  margin-right: 5px;
+}
+
+.rating span:last-child {
+  margin-right: 0;
+}
+
+.customer-reviews {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.customer-reviews h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.customer-reviews h2::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 3px;
+  background-color: #ff9800;
+  margin: 10px auto 0;
+}
+
+.reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.review-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.review-text {
+  font-style: italic;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.review-card h4 {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* treading rental section */
+.trending-rentals {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f8f9fa;
+}
+
+.trending-rentals h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.trending-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.rental-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 280px;
+  height: 340px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.rental-card:hover {
+  transform: translateY(-8px);
+}
+
+.rental-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.rental-card h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #444;
+}
+
+.price {
+  font-size: 1rem;
+  color: #ff5722;
+  font-weight: bold;
+}
+
+.rent-btn {
+  background: #ff5722;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.rent-btn:hover {
+  background: #e64a19;
+}
+
+
+
+/* product listing owner */
+h1{
+  font-size: 35px;
+  color:orange;
+}
+p{
+
+  font-size: 20px;
+
+}
+.owner {
+  text-align: center;
+  padding: 100px 20px;
+  background: url('../images/owner-banner.png') no-repeat center center;
+  background-size: cover; /* Ensures the image covers the entire section properly */
+  background-attachment: fixed; /* Optional: Creates a parallax effect */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px; /* Adjust the height as needed */
+}
+
+.btn {
+  background: #ff6600;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block; /* Ensures proper spacing */
+  transition: background 0.3s ease; /* Smooth hover effect */
+}
+
+.btn:hover {
+  background: #e55b00;
+}
+
+/* Add product owner  */
+/* Add Product Page */
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  margin-top: 20px;
+  color: #ffcc00;
+}
+
+.add-product-form {
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.add-product-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure all elements share the same width */
+.add-product-form input,
+.add-product-form select,
+.add-product-form textarea,
+.add-product-form button {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.add-product-form label {
+  font-size: 16px;
+  margin: 12px 0 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+.add-product-form input,
+.add-product-form select,
+.add-product-form textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.add-product-form input:focus,
+.add-product-form select:focus,
+.add-product-form textarea:focus {
+  border-color: #ff6600;
+  outline: none;
+}
+
+.add-product-form button {
+  background: #ff6600;
+  color: white;
+  padding: 14px;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-product-form button:hover {
+  background: #e55b00;
+}
+
+/* footer section */
+/* Footer Styling */
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.footer-container div {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 8px 0;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #ff9800;
+}
+
+.footer-social a {
+  margin: 5px;
+  display: inline-block;
+}
+
+.footer-social img {
+  width: 30px;
+  height: 30px;
+  transition: 0.3s;
+}
+
+.footer-social img:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  font-size: 14px;
+}

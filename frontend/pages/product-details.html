@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #1f1c2c, #928dab);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .product-details {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+      max-width: 500px;
+      width: 90%;
+      backdrop-filter: blur(10px);
+      text-align: center;
+    }
+
+    .product-image {
+      width: 100%;
+      max-height: 280px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .product-details h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #f5d142;
+    }
+
+    .product-details p {
+      margin: 8px 0;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #f5d142;
+      color: #1f1c2c;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e6c337;
+    }
+    </style>
+</head>
+<body>
+    <div class="product-details" id="details"></div>
+<button onclick="window.location.href='booking-form.html'">Rent Now</button>
+<script src="../js/product-details.js"></script>
+
+</body>
+</html>

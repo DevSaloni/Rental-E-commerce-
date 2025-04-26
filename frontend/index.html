@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental E-Commerce</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MultiRentX </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/myListing.html">My Listings</a></li>
+                <li><a href="pages/login.html">Login</a></li>
+                <li><a href="pages/register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <section class="hero">
+        <div class="search-filter">
+          <input type="text" id="search-bar" placeholder="Search category...">
+          <select id="price-filter">
+            <option value="" disabled selected>Select price range</option>
+
+            <option value="all">All Prices</option>
+            <option value="0-30">$0 - $30</option>
+            <option value="30-60">$30 - $60</option>
+            <option value="60-100">$60 - $100</option>
+            <option value="100+">$100+</option>
+          </select>
+          <button id="search-btn">Search</button>
+        </div>
+      
+        <div class="products-container" id="products-container">
+          <!-- Filtered products will appear here -->
+        </div>
+      </section>
+      
+    
+      
+
+    <!-- category section -->
+    <section class="recommended-products">
+        <h2>Explore Rentals by Category</h2>
+        <div class="category-tabs">
+          <button class="tab active" data-category="jewelry">Jewelry</button>
+          <button class="tab" data-category="electronics">Electronics</button>
+          <button class="tab" data-category="furniture">Furniture</button>
+          <button class="tab" data-category="vehicles">Vehicles</button>
+        </div>
+        <div class="products-container" id="product-list">
+            <!-- Cards will be dynamically loaded here -->
+          </div>
+      </section>
+      
+      <!-- review section -->
+       <!-- Customer Reviews Section -->
+       <section class="customer-reviews">
+        <h2>What Our Customers Say</h2>
+        <div class="reviews-container">
+            <!-- Review 1 -->
+            <div class="review-card">
+                <div class="rating">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <p class="review-text">“Amazing service! Rented a DSLR for my vacation.”</p>
+                <h4>- Priya Sharma</h4>
+            </div>
+            <!-- Review 2 -->
+            <div class="review-card">
+                <div class="rating">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                </div>
+                <p class="review-text">“Furniture quality was great. Highly recommended.”</p>
+                <h4>- Ramesh Gupta</h4>
+            </div>
+            <!-- Review 3 -->
+            <div class="review-card">
+                <div class="rating">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <p class="review-text">"A Best service"</p>
+                <h4>- Neha Kulkarni</h4>
+            </div>
+        </div>
+    </section>
+    <!-- treading Rental section -->
+    <section class="trending-rentals">
+        <h2>🔥 Trending Rentals</h2>
+        <div class="trending-container">
+            <div class="rental-card">
+                <img src="images/jewellery.jpeg" alt="Luxury Watch">
+                <h3>Luxury Watch</h3>
+                <p class="price">$15/day</p>
+                <a href="pages/booking-form.html" class="rent-btn">Rent Now</a>
+            </div>
+            
+            <div class="rental-card">
+                <img src="images/laptop.jpeg" alt="Laptop">
+                <h3>Gaming Laptop</h3>
+                <p class="price">$30/day</p>
+                <a href="pages/booking-form.html" class="rent-btn">Rent Now</a>
+            </div>
+    
+            <div class="rental-card">
+                <img src="images/sofa.jpeg" alt="Sofa">
+                <h3>Luxury Sofa</h3>
+                <p class="price">$25/day</p>
+                <a href="pages/booking-form.html" class="rent-btn">Rent Now</a>
+            </div>
+    
+            <div class="rental-card">
+                <img src="images/bike.jpeg" alt="Luxury Car">
+                <h3>Luxury Car</h3>
+                <p class="price">$100/day</p>
+                <a href="pages/booking-form.html" class="rent-btn">Rent Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- product listing page for owner -->
+    
+    <section class="owner">
+        <h1>Rent Anything, Anytime</h1>
+        <p>Find the best rental deals on furniture, electronics, and more.</p>
+        <a href="pages/add-product.html" class="btn">List Your Product</a>
+    </section>
+    
+    
+        
+    
+    <!-- footer  section-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>MultiRentX</h2>
+                <p>Your trusted rental marketplace.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Browse Rentals</a></li>
+                    <li><a href="#">Add Rental</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: support@multirentx.com</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Location: Pune,Maharashtra</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="#"><img src="images/facebook.jpeg" alt="Facebook"></a>
+                <a href="#"><img src="images/Twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="images/instagram.jpeg" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 MultiRentX. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+
+  <script src="js/script.js"></script>
+  <script src="js/home.js"></script>
+
+</body>
+</html>
+

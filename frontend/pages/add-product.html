@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product | MultiRentX</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+    
+
+    <div class="add-product-form">
+        <form enctype="multipart/form-data" method="POST">
+            <h1>Add Your Rental Product</h1>
+
+            <label>Product Name:</label>
+            <input type="text" name="product_name" required>
+
+            <label>Category:</label>
+<select name="category">
+    <option value="jewelry">Jewelry</option>
+    <option value="furniture">Furniture</option>
+    <option value="electronics">Electronics</option>
+    <option value="vehicles">Vehicles</option>
+</select>
+
+
+            <label>Price per Day ($):</label>
+            <input type="number" name="price" required>
+
+            <label>Upload Product Images:</label>
+            <input type="file" name="product_image" multiple required>
+
+            <label>Product Description:</label>
+            <textarea name="description" rows="4"></textarea>
+
+            <label>Owner Name:</label>
+            <input type="text" name="owner_name" required>
+
+            <label>Contact Email:</label>
+            <input type="email" name="contact_email" required>
+
+            <label>Location:</label>
+            <input type="text" name="location" required>
+
+            <button type="submit">Submit Product</button>
+        </form>
+    </div>
+    <script src="../js/add-product.js"></script>
+
+</body>
+</html>
